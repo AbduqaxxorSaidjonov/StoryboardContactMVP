@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="259" id="KGk-i7-Jjw" customClass="ContactTableViewCell" customModule="StoryboardContact" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQI-h8-YX7">
+                        <rect key="frame" x="20" y="20" width="305" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko8-pd-AI2">
+                        <rect key="frame" x="20" y="51" width="305" height="188"/>
+                        <string key="text">Yes, about the 85.0 in the first line, it's just my rough estimation of what my data gonna take for each cell, estimate yours yourself or just use mine.(Note: the more closer your estimation to the actual height was, the less time it's gonna take to finished resizing)</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ko8-pd-AI2" firstAttribute="top" secondItem="dQI-h8-YX7" secondAttribute="bottom" constant="10" id="CJ2-lL-cXZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ko8-pd-AI2" secondAttribute="trailing" constant="20" id="D01-2u-rNc"/>
+                    <constraint firstItem="dQI-h8-YX7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="XNn-ah-BKF"/>
+                    <constraint firstItem="ko8-pd-AI2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="c4L-z0-I1W"/>
+                    <constraint firstAttribute="bottom" secondItem="ko8-pd-AI2" secondAttribute="bottom" constant="20" id="eSk-ZD-Fl3"/>
+                    <constraint firstItem="dQI-h8-YX7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="f6u-re-73k"/>
+                    <constraint firstAttribute="trailing" secondItem="dQI-h8-YX7" secondAttribute="trailing" constant="20" id="hIF-xT-fsb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="dQI-h8-YX7" id="ufV-mi-0m6"/>
+                <outlet property="phoneLabel" destination="ko8-pd-AI2" id="LTQ-bQ-Mh5"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="185.82589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

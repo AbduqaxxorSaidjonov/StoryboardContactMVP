@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		76270F2C2886C08D00F5623D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F2B2886C08D00F5623D /* AppDelegate.swift */; };
 		76270F2E2886C08D00F5623D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F2D2886C08D00F5623D /* SceneDelegate.swift */; };
-		76270F302886C08D00F5623D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F2F2886C08D00F5623D /* ViewController.swift */; };
 		76270F332886C08D00F5623D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76270F312886C08D00F5623D /* Main.storyboard */; };
 		76270F362886C08D00F5623D /* StoryboardContact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76270F342886C08D00F5623D /* StoryboardContact.xcdatamodeld */; };
 		76270F382886C08E00F5623D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76270F372886C08E00F5623D /* Assets.xcassets */; };
@@ -17,6 +16,16 @@
 		76270F462886C08E00F5623D /* StoryboardContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F452886C08E00F5623D /* StoryboardContactTests.swift */; };
 		76270F502886C08E00F5623D /* StoryboardContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F4F2886C08E00F5623D /* StoryboardContactUITests.swift */; };
 		76270F522886C08E00F5623D /* StoryboardContactUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F512886C08E00F5623D /* StoryboardContactUITestsLaunchTests.swift */; };
+		76270F632886C0F800F5623D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F612886C0F800F5623D /* HomeViewController.swift */; };
+		76270F642886C0F800F5623D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76270F622886C0F800F5623D /* HomeViewController.xib */; };
+		76270F662886C25D00F5623D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F652886C25D00F5623D /* BaseViewController.swift */; };
+		76270F692886C28F00F5623D /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F672886C28F00F5623D /* CreateViewController.swift */; };
+		76270F6A2886C28F00F5623D /* CreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76270F682886C28F00F5623D /* CreateViewController.xib */; };
+		76270F6D2886C29F00F5623D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F6B2886C29F00F5623D /* EditViewController.swift */; };
+		76270F6E2886C29F00F5623D /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76270F6C2886C29F00F5623D /* EditViewController.xib */; };
+		76270F702886C41800F5623D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F6F2886C41800F5623D /* Contact.swift */; };
+		76270F742886C53D00F5623D /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F722886C53D00F5623D /* ContactTableViewCell.swift */; };
+		76270F752886C53D00F5623D /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76270F732886C53D00F5623D /* ContactTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +49,6 @@
 		76270F282886C08D00F5623D /* StoryboardContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76270F2B2886C08D00F5623D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76270F2D2886C08D00F5623D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76270F2F2886C08D00F5623D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76270F322886C08D00F5623D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76270F352886C08D00F5623D /* StoryboardContact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoryboardContact.xcdatamodel; sourceTree = "<group>"; };
 		76270F372886C08E00F5623D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,16 @@
 		76270F4B2886C08E00F5623D /* StoryboardContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76270F4F2886C08E00F5623D /* StoryboardContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardContactUITests.swift; sourceTree = "<group>"; };
 		76270F512886C08E00F5623D /* StoryboardContactUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardContactUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76270F612886C0F800F5623D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		76270F622886C0F800F5623D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		76270F652886C25D00F5623D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		76270F672886C28F00F5623D /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		76270F682886C28F00F5623D /* CreateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateViewController.xib; sourceTree = "<group>"; };
+		76270F6B2886C29F00F5623D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		76270F6C2886C29F00F5623D /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		76270F6F2886C41800F5623D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		76270F722886C53D00F5623D /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		76270F732886C53D00F5623D /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +119,12 @@
 		76270F2A2886C08D00F5623D /* StoryboardContact */ = {
 			isa = PBXGroup;
 			children = (
+				76270F712886C52600F5623D /* cell */,
+				76270F5E2886C09E00F5623D /* controllers */,
+				76270F602886C0C600F5623D /* model */,
+				76270F5F2886C0AB00F5623D /* apputils */,
 				76270F2B2886C08D00F5623D /* AppDelegate.swift */,
 				76270F2D2886C08D00F5623D /* SceneDelegate.swift */,
-				76270F2F2886C08D00F5623D /* ViewController.swift */,
-				76270F312886C08D00F5623D /* Main.storyboard */,
-				76270F372886C08E00F5623D /* Assets.xcassets */,
-				76270F392886C08E00F5623D /* LaunchScreen.storyboard */,
 				76270F3C2886C08E00F5623D /* Info.plist */,
 				76270F342886C08D00F5623D /* StoryboardContact.xcdatamodeld */,
 			);
@@ -128,6 +146,47 @@
 				76270F512886C08E00F5623D /* StoryboardContactUITestsLaunchTests.swift */,
 			);
 			path = StoryboardContactUITests;
+			sourceTree = "<group>";
+		};
+		76270F5E2886C09E00F5623D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76270F652886C25D00F5623D /* BaseViewController.swift */,
+				76270F612886C0F800F5623D /* HomeViewController.swift */,
+				76270F622886C0F800F5623D /* HomeViewController.xib */,
+				76270F672886C28F00F5623D /* CreateViewController.swift */,
+				76270F682886C28F00F5623D /* CreateViewController.xib */,
+				76270F6B2886C29F00F5623D /* EditViewController.swift */,
+				76270F6C2886C29F00F5623D /* EditViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		76270F5F2886C0AB00F5623D /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				76270F372886C08E00F5623D /* Assets.xcassets */,
+				76270F312886C08D00F5623D /* Main.storyboard */,
+				76270F392886C08E00F5623D /* LaunchScreen.storyboard */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		76270F602886C0C600F5623D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				76270F6F2886C41800F5623D /* Contact.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		76270F712886C52600F5623D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				76270F722886C53D00F5623D /* ContactTableViewCell.swift */,
+				76270F732886C53D00F5623D /* ContactTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +293,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76270F6E2886C29F00F5623D /* EditViewController.xib in Resources */,
 				76270F3B2886C08E00F5623D /* LaunchScreen.storyboard in Resources */,
+				76270F752886C53D00F5623D /* ContactTableViewCell.xib in Resources */,
+				76270F6A2886C28F00F5623D /* CreateViewController.xib in Resources */,
 				76270F382886C08E00F5623D /* Assets.xcassets in Resources */,
 				76270F332886C08D00F5623D /* Main.storyboard in Resources */,
+				76270F642886C0F800F5623D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76270F302886C08D00F5623D /* ViewController.swift in Sources */,
+				76270F662886C25D00F5623D /* BaseViewController.swift in Sources */,
 				76270F2C2886C08D00F5623D /* AppDelegate.swift in Sources */,
+				76270F692886C28F00F5623D /* CreateViewController.swift in Sources */,
 				76270F2E2886C08D00F5623D /* SceneDelegate.swift in Sources */,
+				76270F702886C41800F5623D /* Contact.swift in Sources */,
 				76270F362886C08D00F5623D /* StoryboardContact.xcdatamodeld in Sources */,
+				76270F742886C53D00F5623D /* ContactTableViewCell.swift in Sources */,
+				76270F632886C0F800F5623D /* HomeViewController.swift in Sources */,
+				76270F6D2886C29F00F5623D /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
