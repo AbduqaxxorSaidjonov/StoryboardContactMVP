@@ -26,6 +26,9 @@
 		76270F702886C41800F5623D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F6F2886C41800F5623D /* Contact.swift */; };
 		76270F742886C53D00F5623D /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76270F722886C53D00F5623D /* ContactTableViewCell.swift */; };
 		76270F752886C53D00F5623D /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76270F732886C53D00F5623D /* ContactTableViewCell.xib */; };
+		76E9B76F288A4B23002C50C0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 76E9B76E288A4B23002C50C0 /* Alamofire */; };
+		76E9B772288A4B4C002C50C0 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 76E9B771288A4B4C002C50C0 /* JGProgressHUD */; };
+		76E9B775288A4B6D002C50C0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9B774288A4B6D002C50C0 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,7 @@
 		76270F6F2886C41800F5623D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		76270F722886C53D00F5623D /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		76270F732886C53D00F5623D /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		76E9B774288A4B6D002C50C0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E9B772288A4B4C002C50C0 /* JGProgressHUD in Frameworks */,
+				76E9B76F288A4B23002C50C0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +129,7 @@
 				76270F5E2886C09E00F5623D /* controllers */,
 				76270F602886C0C600F5623D /* model */,
 				76270F5F2886C0AB00F5623D /* apputils */,
+				76E9B773288A4B59002C50C0 /* networking */,
 				76270F2B2886C08D00F5623D /* AppDelegate.swift */,
 				76270F2D2886C08D00F5623D /* SceneDelegate.swift */,
 				76270F3C2886C08E00F5623D /* Info.plist */,
@@ -189,6 +196,14 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		76E9B773288A4B59002C50C0 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				76E9B774288A4B6D002C50C0 /* Networking.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,6 +220,10 @@
 			dependencies = (
 			);
 			name = StoryboardContact;
+			packageProductDependencies = (
+				76E9B76E288A4B23002C50C0 /* Alamofire */,
+				76E9B771288A4B4C002C50C0 /* JGProgressHUD */,
+			);
 			productName = StoryboardContact;
 			productReference = 76270F282886C08D00F5623D /* StoryboardContact.app */;
 			productType = "com.apple.product-type.application";
@@ -277,6 +296,10 @@
 				Base,
 			);
 			mainGroup = 76270F1F2886C08D00F5623D;
+			packageReferences = (
+				76E9B76D288A4B23002C50C0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				76E9B770288A4B4C002C50C0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
 			productRefGroup = 76270F292886C08D00F5623D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -325,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76270F662886C25D00F5623D /* BaseViewController.swift in Sources */,
+				76E9B775288A4B6D002C50C0 /* Networking.swift in Sources */,
 				76270F2C2886C08D00F5623D /* AppDelegate.swift in Sources */,
 				76270F692886C28F00F5623D /* CreateViewController.swift in Sources */,
 				76270F2E2886C08D00F5623D /* SceneDelegate.swift in Sources */,
@@ -668,6 +692,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		76E9B76D288A4B23002C50C0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		76E9B770288A4B4C002C50C0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76E9B76E288A4B23002C50C0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76E9B76D288A4B23002C50C0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		76E9B771288A4B4C002C50C0 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76E9B770288A4B4C002C50C0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		76270F342886C08D00F5623D /* StoryboardContact.xcdatamodeld */ = {
